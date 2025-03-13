@@ -221,6 +221,7 @@ void setup() {
     delay(1000);
   }
   server.begin();
+  digitalWrite(LED_R, LOW);
   digitalWrite(LED_G, HIGH);
 }
 
@@ -263,12 +264,12 @@ void loop() {
     wext_set_channel(WLAN0_NAME, scan_results[deauth_wifis[current_num]].channel);
     current_num++;
     if (current_num >= deauth_wifis.size()) current_num = 0;
-    digitalWrite(LED_B, HIGH);
+    digitalWrite(LED_R, HIGH);
     for (int i = 0; i < FRAMES_PER_DEAUTH; i++) {
       sendDeauthenticationFrames(deauth_bssid, (void *)"\xFF\xFF\xFF\xFF\xFF\xFF", deauth_reason);
       delay(5);
     }
-    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_R, LOW);
     delay(50);
   }
 }
