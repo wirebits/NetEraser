@@ -163,19 +163,20 @@ void handleRoot(WiFiClient &client) {
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ToxicBottle</title>
+      <title>NetEraser</title>
       <style>
-        body{background-color: #000000;display: flex;justify-content: center;align-items: center;height: 100vh;margin: 0;color: white;font-family: sans-serif;flex-direction: column;}
+        body{background-color: #000000; color: white; text-align: center; font-family: Arial, sans-serif;}
         h1{font-size: 1.4rem;margin-bottom: 10px;padding: 10px;border: 2px solid #FFC72C;font-weight: 100;letter-spacing: 5px;background-color: #000000;color: white;display: inline-block;}
-        table{width: 100%;border-collapse: collapse;margin-bottom: 20px;border: 2px solid #87CEEB;}
-        th,td{color: white;background-color: black;padding: 12px;border: 1px solid #87CEEB;text-align: center;}
+        table{width: 80%; margin: auto; border-collapse: collapse; border: 2px solid #87CEEB; margin-bottom: 20px;}
+        th,td{border: 1px solid #87CEEB; padding: 12px; text-align: center;}
+        th{background-color: #000000;}
         form{background-color: black;padding: 20px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.1);margin-bottom: 20px;width: 100%;}
         input[type="submit"]{background-color: #00AB66;color: white;border: none;padding: 15px 30px;font-size: 20px;cursor: pointer;border-radius: 5px;display: block;margin: 20px auto;text-align: center;width: 200px;}
         input[type="submit"]:hover{background-color: #00AB66;}
       </style>
   </head>
   <body>
-      <h1>ToxicBottle</h1>
+      <h1>NetEraser</h1>
       <form method="post" action="/deauth">
           <table>
               <tr>
