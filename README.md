@@ -46,7 +46,7 @@ A tool that deauthenticates 2.4GHz and 5GHz Wi-Fi networks using BW16.
 3. Open any browser and type the following IP : `192.168.1.1`.
 4. Select the network want to deauth by click on the radio button.
 5. After that, click on `Start` button.
-   - The Blue led start flickering means it deauthenticates that network.
+   - The Red led start flickering means it deauthenticates that network.
 
 # Note
 - Sometimes, it can't deauth at starting.
@@ -54,4 +54,4 @@ A tool that deauthenticates 2.4GHz and 5GHz Wi-Fi networks using BW16.
 
 # Indicators
 - 🟢 - The BW16 board is ready to deauth.
-- 🔵 - The BW16 board is sending deauthentication frames.
+- 🔴 - The BW16 board is sending deauthentication frames.
