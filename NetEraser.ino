@@ -216,6 +216,10 @@ void setup() {
   pinMode(LED_R, OUTPUT);
   pinMode(LED_G, OUTPUT);
   pinMode(LED_B, OUTPUT);
+  IPAddress localip(192, 168, 4, 1);
+  IPAddress gateway(192, 168, 4, 1);
+  IPAddress subnet(255, 255, 255, 0);
+  WiFi.config(localip, gateway, subnet);
   WiFi.apbegin(ssid, pass, (char *)String(current_channel).c_str());
   if (scanNetworks()){
     delay(1000);
