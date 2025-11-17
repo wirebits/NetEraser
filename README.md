@@ -24,7 +24,7 @@ A tool that deauthenticates 2.4GHz and 5GHz Wi-Fi networks using BW16.
 5. Click on `OK`.
 6. Go to `Tools` → `Board` → `Board Manager`.
 7. Wait for sometimes and search `Realtek Ameba Boards (32-Bits ARM Cortex-M33@200MHz)` by `Realtek`.
-8. Simply install it.
+8. Simply install version `3.1.7`.
 9. Restart the Arduino IDE by closing and open again.
 10. Done!
 
